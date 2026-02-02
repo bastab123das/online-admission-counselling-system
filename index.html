@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Admission Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>🎓 Welcome to Online Admission Portal 🎓</h1>
+        <p>Manage your admission process with ease!</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card" onclick="handleClick('register.html')">
+                <div class="icon">📋</div>
+                <h4>Student Registration</h4>
+                <p>Register to start your admission process.</p>
+                <button class="btn btn-primary">Register</button>
+            </div>
+            <div class="card" onclick="handleClick('login.html')">
+                <div class="icon">🔑</div>
+                <h4>Student Login</h4>
+                <p>Login to access the portal.</p>
+                <button class="btn btn-secondary">Login</button>
+            </div>
+            <div class="card" onclick="handleClick('choice_filling.html')">
+                <div class="icon">🎯</div>
+                <h4>Choice Filling</h4>
+                <p>Choose your preferred colleges and courses.</p>
+                <button class="btn btn-success">Fill Choices</button>
+            </div>
+            <div class="card" onclick="handleClick('allotment_result.html')">
+                <div class="icon">📌</div>
+                <h4>Seat Allotment</h4>
+                <p>Check your seat allotment status.</p>
+                <button class="btn btn-warning">Check Allotment</button>
+            </div>
+            <div class="card" onclick="handleClick('upload_documents.html')">
+                <div class="icon">📁</div>
+                <h4>Document Upload</h4>
+                <p>Upload required documents.</p>
+                <button class="btn btn-info">Upload Documents</button>
+            </div>
+            <div class="card" onclick="handleClick('payment.html')">
+                <div class="icon">💳</div>
+                <h4>Payment</h4>
+                <p>Complete your admission payment.</p>
+                <button class="btn btn-danger">Make Payment</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div style="text-align: center; margin-top: 40px;">
+        <a href="admin/admin_login.html">
+            <button style="padding: 10px 20px; font-size: 16px;">🔐 Admin Login</button>
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Online Admission Portal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function handleClick(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

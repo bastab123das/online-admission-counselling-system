@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+</head>
+<body>
+    <h2>Payment Form</h2>
+    <form action="payment_process.php" method="post">
+        <label>Payment Method:</label>
+        <select name="payment_method" required>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="UPI">UPI</option>
+            <option value="Net Banking">Net Banking</option>
+        </select>
+        <br><br>
+
+        <label>Payment Amount:</label>
+        <input type="number" name="payment_amount" required>
+        <br><br>
+
+        <button type="submit">Pay Now</button>
+    </form>
+</body>
+</html>

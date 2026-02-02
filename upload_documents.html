@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h3>Upload Required Documents</h3>
+        <form action="upload_documents.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="rank_letter">Upload Rank Letter</label>
+                <input type="file" id="rank_letter" name="rank_letter" accept="application/pdf, image/jpeg, image/png" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="caste_certificate">Upload Caste Certificate (if applicable)</label>
+                <input type="file" id="caste_certificate" name="caste_certificate" accept="application/pdf, image/jpeg, image/png">
+            </div>
+
+            <div class="form-group">
+                <label for="id_proof">Upload ID Proof</label>
+                <input type="file" id="id_proof" name="id_proof" accept="application/pdf, image/jpeg, image/png" required>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit">Upload Documents</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
